@@ -2,18 +2,17 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "concurrently --kill-others \"HOST=0.0.0.0 nuxt dev\" \"vitest\"",
+    "dev": "HOST=0.0.0.0 nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "test": "vitest"
   },
   "stackblitz": {
-    "startCommand": "npm run dev"
+    "startCommand": "npm run test"
   },
   "devDependencies": {
     "@types/node": "^18",
-    "concurrently": "^8.0.1",
     "nuxt": "^3.4.3"
   },
   "dependencies": {
